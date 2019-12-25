@@ -1,0 +1,22 @@
+<router-outlet></router-outlet>
+<jw-modal id="newHuman">
+    <div class="padreModal">
+        <div class="circuloModal hijoModal"></div>
+        <form style="padding:  0vh 5vh 0vh 5vh" class="hijo-input-Create col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" [formGroup]="validationsForm"
+            #form="ngForm" validate>
+            <input formControlName="name" type="text" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" name="name"
+                placeholder="Nombre de humano">
+            <div class="validation-errors">
+                <ng-container *ngFor="let validation of validationMessages.name">
+                    <div class="error-message"
+                        *ngIf="validationsForm.get('name').hasError(validation.type) && (validationsForm.get('name').dirty || validationsForm.get('name').touched)">
+                        {{ validation.message }}
+                    </div>
+                </ng-container>
+            </div>
+        </form>
+        <div class="hijo-btn-Create">
+            <button (click)="createHuman(form.value)" [disabled]="form.invalid" class="btn btn-lg btn-Create">Crear Humano</button>
+        </div>
+    </div>
+</jw-modal>

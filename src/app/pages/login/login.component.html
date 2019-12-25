@@ -1,0 +1,39 @@
+<div class="container-fluid content-row back">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand">TEST</a>
+    </nav>
+    <div class=" btn-inline circulos3"></div>
+    <div class="circulos"></div>
+    <div class="circulos2"></div>
+    
+    <form [formGroup]="validationsForm" #form="ngForm" validate class="padreModal">
+        <div class="card hijoModal col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <div class="card-body">
+                <div class="row btn-inline">
+                    <input formControlName="name" class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10" type="text" name="name" placeholder="Usuario">
+                    <div class="validation-errors">
+                        <ng-container *ngFor="let validation of validationMessages.name">
+                            <div class="error-message" *ngIf="validationsForm.get('name').hasError(validation.type) && (validationsForm.get('name').dirty || validationsForm.get('name').touched)">
+                                {{ validation.message }}
+                        </div>
+                        </ng-container>
+                    </div>
+                </div>
+                <div class="row btn-inline">
+                    <input formControlName="psw" class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10" type="text" name="password" placeholder="Contraseña">
+                    <div class="validation-errors">
+                        <ng-container *ngFor="let validation of validationMessages.psw">
+                            <div class="error-message" *ngIf="validationsForm.get('psw').hasError(validation.type) && (validationsForm.get('psw').dirty || validationsForm.get('psw').touched)">
+									{{ validation.message }}
+                            </div>
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-inline">
+                <button (click)="login(form.value)" class="btn btn-lg btn-Create">Ingresar</button>
+            </div>
+        </div>
+
+    </form>
+</div>

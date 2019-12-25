@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg fixed-top fixed-top-2">
+    <div class="container-fluid content-row">
+        <div class="row" style="width: 100%; margin-left: 0px; margin-right: 0px;">
+            <button (click)="onClick(1)" fixed routerLinkActive="active" class="btn1 btn-lg btn-adn col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2"> Nuevo humano</button>
+            <button (click)="onClick(2)" fixed routerLinkActive="active" class="btn2 btn-lg btn-adn col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2"> Analizar humanos</button>
+            <button (click)="onClick(3)" fixed routerLinkActive="active" class="btn3 btn-lg btn-adn col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2"> Con mutuación</button>
+            <button (click)="onClick(4)" fixed routerLinkActive="active" class="btn4 btn-lg btn-adn col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2"> Sin mutuación</button>
+        </div>
+    </div>
+</nav>
+
+<nav class="navbar navbar-toggleable-sm bg-inverse navbar-inverse fixed-top">
+    <div class=" top">
+        <h1> ADN detector
+            <span *ngIf="tipo"> CM: {{cm}} SM: {{sm}}</span>
+        </h1>
+    </div>
+    <button (click)="onClick(5)" class="navbar-toggler navbar-toggler-right" type="button">
+        <div class="container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </button>
+</nav>

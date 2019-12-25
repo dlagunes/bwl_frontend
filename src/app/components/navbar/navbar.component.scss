@@ -1,0 +1,185 @@
+@media (min-width: 992px) and (max-width: 1024px) {
+    .col-lg-3 {
+        -ms-flex : 0 0 25vh;
+        flex     : 0 0 25vh;
+        max-width: 25vh;
+    }
+}
+@media (min-width: 1024px) and (max-width: 2880px) {
+    .col-lg-3 {
+        -ms-flex : 0 0 25vh;
+        flex     : 0 0 25vh;
+        max-width: 25vh;
+    }
+}
+@media (min-width: 2880px) {
+    .col-lg-3 {
+        -ms-flex : 0 0 25vh;
+        flex     : 0 0 25vh;
+        max-width: 25vh;
+    }
+}
+
+
+.container {
+    display: inline-block;
+    cursor : pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width           : 35px;
+    height          : 5px;
+    background-color: white;
+    margin          : 6px 0;
+    transition      : 0.4s;
+}
+
+.bar2 {
+    margin-left: 5px;
+}
+
+.navbar {
+    position       : relative;
+    display        : -ms-flexbox;
+    display        : flex;
+    -ms-flex-wrap  : wrap;
+    flex-wrap      : wrap;
+    -ms-flex-align : center;
+    align-items    : center;
+    -ms-flex-pack  : justify;
+    justify-content: space-between;
+    padding        : .5rem 1%;
+
+    @media (min-width: 200px) {
+        padding: .5rem 0%;
+    }
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform        : rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform        : rotate(45deg) translate(-8px, -8px);
+}
+
+.fixed-top {
+    position  : fixed;
+    top       : 0;
+    right     : 0;
+    left      : 0;
+    z-index   : 0;
+    background: #014ee8;
+
+    .top {
+        color      : white;
+        font-size  : 28px;
+        font-weight: 600;
+        margin-top : 4vh;
+        margin-left: 9vh;
+
+        @media (min-width: 0px) and (max-width: 768px) {
+            font-size  : 18px;
+            margin-top : 0vh;
+            margin-left: 2vh;
+
+            h1 {
+                margin-bottom: 0vh;
+            }
+        }
+    }
+}
+
+.fixed-top-2 {
+    height: 45vh;
+
+    @media (min-width: 0px) and (max-width: 768px) {
+        height: 55vh;
+    }
+}
+
+nav {
+    border-bottom-right-radius        : 50px;
+    border-bottom-left-radius         : 50px;
+    -moz-border-bottom-left-radius    : 50px;
+    -webkit-border-bottom-left-radius : 50px;
+    -moz-border-bottom-right-radius   : 50px;
+    -webkit-border-bottom-right-radius: 50px;
+}
+
+ul {
+    width: 100%;
+}
+
+
+@media (min-width: 992px) and (max-width: 1024px)  {
+    .btn1{
+        margin-left : 5vh;
+        margin-right: 23vh;
+    }
+    .btn2, .btn3{
+        margin-right: 23vh;
+    }
+}
+@media (min-width: 1024px) and (max-width: 2880px)  {
+    .btn1{
+        margin-left : 5vh;
+        margin-right: 23vh;
+    }
+    .btn2, .btn3{
+        margin-right: 23vh;
+    }
+}
+@media (min-width: 2880px)  {
+    .btn1{
+        margin-left : 5vh;
+        margin-right: 23vh;
+    }
+    .btn2, .btn3{
+        margin-right: 23vh;
+    }
+}
+.btn1,
+.btn2,
+.btn3,
+.btn4 {
+    margin-top: 2vh;
+    border-top-right-radius           : 50px;
+    border-top-left-radius            : 50px;
+    -moz-border-top-left-radius       : 50px;
+    -webkit-border-top-left-radius    : 50px;
+    -moz-border-top-right-radius      : 50px;
+    -webkit-border-top-right-radius   : 50px;
+    border-bottom-right-radius        : 50px;
+    border-bottom-left-radius         : 50px;
+    -moz-border-bottom-left-radius    : 50px;
+    -webkit-border-bottom-left-radius : 50px;
+    -moz-border-bottom-right-radius   : 50px;
+    -webkit-border-bottom-right-radius: 50px;
+}
+
+.btn-adn {
+    background-color: #2540cc;
+    color           : white;
+}
+
+button {
+    border-color: transparent;
+}
+
+.btn-adn:hover,
+.btn-adn:active {
+    background-color: #ce004f;
+    color           : white;
+}

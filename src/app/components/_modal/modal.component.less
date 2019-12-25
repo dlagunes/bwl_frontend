@@ -1,0 +1,139 @@
+/* Extra small devices (phones, 600px and down) */
+
+/* MODAL STYLES
+-------------------------------*/
+.padre {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+.hijo {
+  margin       : 0;
+  position     : absolute;
+  top          : calc(100% - 60%);
+//   bottom       : 20%;
+  -ms-transform: translateY(-40%);
+  transform    : translateY(-40%);
+}
+jw-modal {
+    /* modals are hidden by default */
+    display: none;
+
+    .jw-modal {
+        /* modal container fixed across whole screen */
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        /* z-index must be higher than .jw-modal-background */
+        z-index: 1000;
+        
+        /* enables scrolling for tall modals */
+        overflow: auto;
+
+        @media only screen and (max-width: 600px) {
+          .jw-modal-body {
+            border-radius: 25px;
+            padding: 20px;
+            background: #fff;
+            width: calc(100% - 15%);
+            height: calc(100% - 64%);
+            /* margin exposes part of the modal background */
+            margin-left: calc(100% - 92.5%);
+            margin-right: calc(100% - 92.5%);
+        }
+        }
+        // @media only screen and (max-width: 600px) {
+        //   .jw-modal-body {
+        //     border-radius: 25px;
+        //     padding: 20px;
+        //     background: #fff;
+        //     width: calc(100% - 15%);
+        //     height: calc(100% - 60%);
+        //     /* margin exposes part of the modal background */
+        //     margin-left: calc(100% - 92.5%);
+        //     margin-right: calc(100% - 92.5%);
+        // }
+        // }
+        
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+          .jw-modal-body {
+            border-radius: 25px;
+            padding: 20px;
+            background: #fff;
+            width: calc(100% - 60%);
+            height: calc(100% - 40%);
+            /* margin exposes part of the modal background */
+            margin-left: calc(100% - 70%);
+            margin-right: calc(100% - 70%);
+        }
+        }
+        
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+          .jw-modal-body {
+            border-radius: 25px;
+            padding: 20px;
+            background: #fff;
+            width: calc(100% - 20%);
+            height: calc(100% - 50%);
+            /* margin exposes part of the modal background */
+            margin-left: calc(100% - 90%);
+            margin-right: calc(100% - 90%);
+        }
+        } 
+        
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+          .jw-modal-body {
+            border-radius: 25px;
+            padding: 20px;
+            background: #fff;
+            width: calc(100% - 20%);
+            height: calc(100% - 50%);
+            /* margin exposes part of the modal background */
+            margin-left: calc(100% - 90%);
+            margin-right: calc(100% - 90%);
+        }
+        } 
+        
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+          .jw-modal-body {
+            border-radius: 25px;
+            padding: 20px;
+            background: #fff;
+            width: calc(100% - 60%);
+            height: calc(100% - 40%);
+            /* margin exposes part of the modal background */
+            margin-left: calc(100% - 70%);
+            margin-right: calc(100% - 70%);
+        }
+        }
+    }
+
+    .jw-modal-background {
+        /* modal background fixed across whole screen */
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        /* semi-transparent black  */
+        background-color: #000;
+        opacity: 0.75;
+        
+        /* z-index must be below .jw-modal and above everything else  */
+        z-index: 900;
+    }
+}
+
+body.jw-modal-open {
+    /* body overflow is hidden to hide main scrollbar when modal window is open */
+    overflow: hidden;
+}

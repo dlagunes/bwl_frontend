@@ -1,0 +1,14 @@
+.card-columns {
+    margin-top   : 35vh;
+    padding: 0vh 5vh 0vh 5vh;
+    color        : white;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+    .card-columns {
+    margin-top: 45vh;
+    padding: 0vh 5vh 0vh 5vh;
+    padding-left : 0vh;
+    padding-right: 0vh;
+    color        : white;
+    }
+}

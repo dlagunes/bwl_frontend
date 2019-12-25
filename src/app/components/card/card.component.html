@@ -1,0 +1,35 @@
+<div *ngIf="type === 'false'"  class="card">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-4">
+        <div class="circuloS"></div>
+      </div>
+      <div class="col-8">
+      <h5 class="card-title">{{info.name}}</h5>
+      <p class="card-text">Creado en: {{info.date}}</p>
+        <!-- <p class="card-sub-textC">CON MUTUACIÓN.</p> -->
+      </div>
+    </div>
+  </div>
+  <div class="card-foot">
+    <h5 class="card-sub-textS">SIN MUTUACIÓN</h5>
+  </div>
+</div>
+
+<div *ngIf="type === 'true'"  class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-4">
+          <div class="circuloC"></div>
+        </div>
+        <div class="col-8">
+          <h5 class="card-title">Humano</h5>
+          <p class="card-text">Creado en: 2019/01/01</p>
+          <!-- <p class="card-sub-textC">CON MUTUACIÓN.</p> -->
+        </div>
+      </div>
+    </div>
+    <div class="card-foot">
+      <h5 class="card-sub-textC">CON MUTUACIÓN</h5>
+    </div>
+  </div>

@@ -1,0 +1,6 @@
+<app-navbar (response)="callBack($event)" [cm]="cm" [sm]="sm" [ratio]="ratio"></app-navbar>
+<div class="container-fluid content-row">
+    <div class="row card-columns">
+        <app-card *ngFor="let a of adns | filtro: textoBuscar : 'type'" class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" fixed [info]="a" [type]="a.type"></app-card>
+    </div>
+</div>

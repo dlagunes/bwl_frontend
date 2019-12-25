@@ -1,0 +1,125 @@
+
+nav {
+  background-color: transparent;
+}
+.navbar-brand{
+  margin-top: 1%;
+  margin-left: 2%;
+  font-size: 28px;
+  font-weight: 800; 
+  color:#c7074c;
+}
+
+.back{
+  background-image: url('./../../../assets/img/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%; 
+}
+
+
+
+.circuloModal {
+  width                : calc(100% - 70%);
+  height               : calc(100% - 65%);
+  -moz-border-radius   : calc(100% - 50%);
+  -webkit-border-radius: calc(100% - 50%);
+  border-radius        : calc(100% - 50%);
+  background           : #0e8afd;
+}
+
+.padreModal {
+  display        : flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hijoModal {
+  border-radius: 15px;
+  margin       : 0;
+  position     : absolute;
+  height       : 35%;
+  top          : calc(100% - 50%);
+  -ms-transform: translateY(-40%);
+  transform    : translateY(-40%);
+  @media only screen and (min-width: 768px) and (max-width: 1440px) {
+    right        : 10%;
+  }
+}
+
+.btn-inline {
+  display        : flex;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  position: absolute;
+  right: 10%;
+}
+.btn-Create {
+  position: absolute;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  background-color: #f5a62c;
+  color           : black;
+  font-weight     : 800;
+  border-radius: 25px;
+  width: 45%;
+}
+
+// .input {
+//   outline: 0;
+//   border-width: 0 0 2px;
+//   border-color: blue
+// }
+// input:focus {
+//   border-color: green
+// }
+
+input {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #03a8f45e;
+  font-size: 1.4rem;
+  color: black;
+  margin-top: 12%;
+        
+}
+.error-message {
+  color      : #f04141;
+  font-weight: 400;
+}
+
+.circulos {
+  margin-top: 1vh;
+  margin-left: -26vh;
+  width                : 50vh;
+  height               : 50vh;
+  background-color: #abdef3;
+  -moz-border-radius   : 50%;
+  -webkit-border-radius: 50%;
+  border-radius        : 50%;
+}
+
+.circulos2 {
+  margin-top: -30vh;
+  margin-left: 18vh;
+  width                : 10vh;
+  height               : 10vh;
+  // background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(218,224,256,0.9));
+  background-color: rgba(218,224,256,0.7);
+  -moz-border-radius   : 50%;
+  -webkit-border-radius: 50%;
+  border-radius        : 50%;
+}
+
+.circulos3 {
+  margin-top: -28vh;
+  margin-left: 32.8vh;
+  width                : 35vh;
+  height               : 35vh;
+  background-color: #bbf2f5;
+  -moz-border-radius   : 50%;
+  -webkit-border-radius: 50%;
+  border-radius        : 50%;
+}
